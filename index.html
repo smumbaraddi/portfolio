@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/global.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<title>About Sujay Mumbaraddi</title>
+<link href="img/ticon.png" rel="icon" type="image/x-icon" />	
+<meta name="description"
+	content="Welcome to Sujay Mumbaraddi's career website. you can find my resume, profile, work samples and more!" />
+<meta name="keywords"
+	content="Sujay Mumbaraddi,java, j2ee, jee, spring, hibernate, restful , jax-ws , software, developer, online, cv, projects, " />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+	<div id="container">
+		<div id="inner-wrapper">		
+		 <div id="header">
+		   <div id="title">
+		      <a href="about.html">Sujay Mumbaraddi</a>
+		   </div>
+		   <div id='contact'>
+			   <div >sujay.mumbaraddi@gmail.com</div> 
+			   <div style="margin-left: 175px;font-size:20px">+44 793 959 6847</div> 
+		   </div>
+		     
+		   <div id="tagline">
+	              Information Technology Professional</div>
+	     </div>
+	     <div id="content">
+				<div id='cssmenu'>
+					<ul>
+					   <li class='active'><a class='current' href='#'>About Me</a></li>
+					   <li class='last'><a href='#'>Personal Information</a></li>
+					   <li class='last'><a href='#'>Skills</a></li>
+					   <li class='last'><a href='#'>Projects</a></li>
+					   <li class='last'><a href='#'>Employment History</a></li>
+					   <li class='last'><a href='#'>Education & Certifications</a></li>
+					   <li class='last'><a href='./SujayJava9Yrs.pdf' target='_blank'>Download Resume</a></li>
+					</ul>
+				</div>
+				<div id="details"></div>
+			</div>
+	</div>	
+</div>
+
+
+
+
+
+<script type="text/javascript">
+	
+			$(function() {
+				$('#details').load('aboutme.html #AboutMe');	
+			 });
+			
+			$("#cssmenu a[href='#']").click(function(){ 
+				$("#cssmenu a").removeClass("current");
+				$(this).addClass("current");
+                
+                var index = $(this).parent().index(); 
+                
+				if( index == 0) {
+					$('#details').load('aboutme.html #AboutMe');
+					  document.title = "About Me - Sujay Mumbaraddi - Online CV";					
+				} else if ( index == 1 )	 {
+					$('#details').load('personalinfo.html #PersonalInfo');
+					document.title = "Personal Info - Sujay Mumbaraddi - Online CV";	
+				} else if ( index == 2 )	 {
+					$('#details').load('skills.html #Skills');
+					document.title = "Skills - Sujay Mumbaraddi - Online CV";
+				}  else if ( index == 3 )	 {
+					$('#details').load('projects.html #Projects');
+					document.title = "Projects - Sujay Mumbaraddi - Online CV";
+				} else if ( index == 4)	 {
+					$('#details').load('emphistory.html #EmpHistory');
+					document.title = "Employment History - Sujay Mumbaraddi - Online CV";
+				} else if ( index == 5 )	 {
+					$('#details').load('educationcerts.html #EdNCert');
+					document.title = "Education & Certifications - Sujay Mumbaraddi - Online CV";
+				} 
+				return false;	
+			});
+			
+	</script>
+</body>
+</html>		

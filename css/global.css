@@ -1,0 +1,254 @@
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, input, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 17px/24px "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2", Cambria, Georgia, serif;
+	border: 0;
+	color: #3C3C3C;
+	background-image: url('../img/background.png');
+	background-repeat: repeat;
+	background-position: top left;
+	background-attachment: fixed;
+	overflow:scroll;
+}
+
+p {
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+a, u {
+    text-decoration: none;
+}
+
+i{
+	font-weight: normal;
+}
+
+#container {
+	width:950px;
+	height: 600px;
+	margin:0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#inner-wrapper {
+	width: 950px;
+    min-height:800px;
+	float: left;
+	border-color: #ddd #ddd #ccc;
+    border-radius: 3px;-border-radius: 3px;-webkit-border-radius: 3px; -moz-border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#header {
+  margin: 5px;
+  padding: 25px 11px 20px 16px;
+  background-color:#1d4c82;
+  border-bottom:1px solid #000;
+  height: 75px;
+  border: 1px solid #222;
+  border-radius: 10px;
+}
+
+#title{
+	height: 50px;
+	float: left;
+}
+
+#contact div{ 
+	color: #fff;
+	margin: 5px;
+	font: bold italic 17px "Myriad Pro",Myriad,"Trebuchet MS",Helvetica,Arial,sans-serif;
+	text-shadow: 0px 1px 0px #555;
+	float: left;
+	height: 20px;
+	margin-left: 100px;
+	text-align: right;
+}
+
+
+#title a{
+	position: relative;
+	font: bold italic 40px "Myriad Pro",Myriad,"Trebuchet MS",Helvetica,Arial,sans-serif;
+	float: left;
+	margin-right: 150px;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+}
+#title a{ color:#ffffff; text-shadow:0px 1px 0px #000; text-decoration: none;}
+#title a:hover{color: orange; text-decoration: none; }
+
+#tagline {height: 25px; color: #fff; padding-top:20px;font:bold italic 15px "Myriad Pro",Myriad,"Trebuchet MS",Helvetica,Arial,sans-serif;text-shadow:0px 1px 0px #555; }
+
+/* Some stylesheet reset */
+#cssmenu{
+	float: left;
+	width: 230px;
+	margin-left: 10px;
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 1px;
+	background: #EEEEEE;
+	border-radius: 10px;
+}
+#cssmenu > ul {
+	list-style: none;
+	margin: 2px;
+	padding: 0;
+	vertical-align: baseline;
+	line-height: 1;
+}
+
+/* The container */
+#cssmenu > ul {
+	display: block;
+	position: relative;
+	width: 225px;
+}
+
+	/* The list elements which contain the links */
+	#cssmenu > ul li {
+		display: block;
+		position: relative;
+		margin: 0;
+		padding: 0;
+		width: 225px;	
+	}
+
+		/* General link styling */
+		#cssmenu > ul li a {
+			/* Layout */
+			display: block;
+			position: relative;
+			margin: 0;
+			border-top: 1px dotted #fff;
+			border-bottom: 1px dotted #d9d9d9;
+			padding: 11px 20px;
+		
+			/* Typography 
+			font-family:  Helvetica, Arial, sans-serif;*/
+			color: #1d4c82;
+			text-decoration: none;
+			text-shadow: 0 1px 0 #fff;
+			font-size: 15px;
+			font-weight: bold;
+
+			/* Background & effects */
+			background: #E7E7E7;
+		}
+
+		
+
+
+		/* The hover state of the menu/submenu links */
+		#cssmenu > ul li>a:hover{
+			color: #fff;
+			text-shadow: 0 1px 0 rgba(0, 0, 0, .2);
+			background: #1d4c82;
+			background: -webkit-linear-gradient(bottom, #1d4c82, #1e73be);
+			background: -ms-linear-gradient(bottom, #1d4c82, #1e73be); 
+			background: -moz-linear-gradient(bottom, #1d4c82, #1e73be);
+			background: -o-linear-gradient(bottom, #1d4c82, #1e73be);
+			border-color: transparent;
+		}
+
+#details{
+	float: right;
+	width: 71%;
+	margin: 10px;
+	padding-top: 10px; 
+	padding-left: 10px;
+	border-style: solid;
+	border-width: 1px;
+	background: #EEEEEE;
+	border-radius: 10px;
+}
+
+.sub-wrapper{
+	height: 115px;
+	margin: 10px;
+}
+
+.sub-head {
+	margin: 5px 15px 5px 5px;
+	background-color: #c3c3c3;
+	border-radius: 3px;
+}
+
+.sub-content > ul{
+	margin: 10px 10px 0px 25px;
+	padding-bottom: 15px;
+	list-style: none;
+}
+
+.sub-content > ul > li  {
+	background: url('../img/arrows.png') no-repeat left -1px;
+	padding-left: 25px;
+	padding-bottom: 5px;
+}
+
+
+.li-sace > li {
+	float: left;
+	width: 200px;
+	
+}
+
+ .sc-desc > ul{
+	margin: 10px 10px 0px 35px;
+	padding-bottom: 15px;
+	list-style: none;
+}
+
+ .sc-desc > ul >li{
+ 	background: url('../img/arrows.png') no-repeat left -1px;
+	padding-left: 25px;
+	padding-bottom: 5px;
+ }
+
+.sub-content {
+	margin: 10px 10px 0px 25px;
+	padding-bottom: 5px;
+	font-size: 16px;
+}
+
+.sc-title{
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.sc-desc p{
+	margin: 5px 20px;
+}
+
+H1.section {
+	padding: 3px;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 0;
+}
+
+H1#sites-page-title-header {
+	padding: 7px 10px 3px 10px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.current {
+	color: black;
+}
+
+
